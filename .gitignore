@@ -1,0 +1,16 @@
+# Node
+node_modules/
+**/node_modules/
+
+# Logs e relatórios
+log.html
+report.html
+output.xml
+results/
+
+# Ambiente
+.env
+
+# Sistema
+.DS_Store
+Thumbs.db
