@@ -2,6 +2,9 @@
 
 Library    AppiumLibrary
 
+#                --- Page Home ---
+Resource    ../resources/pages/Home/HomePage.resource
+
 *** Variables ***
 
 #                --- Home Page ---
@@ -38,13 +41,13 @@ Click on the app menu
     Wait Until Element Is Visible    ${menuHomePage}
     Click Element                    ${menuHomePage}
 
-Click on the check and radio
-    Wait Until Element Is Visible    ${menuOptionCheckRadio} 
-    Click Element                    ${menuOptionCheckRadio} 
-
-Click on the option Checkbox on check and radio page
+Click on the option check and radio page
     Wait Until Element Is Visible    ${menuOptionCheckRadio} 
     Click Element                    ${menuOptionCheckRadio}
+
+Click on the option Form page
+    Wait Until Element Is Visible    ${menuOptionForms} 
+    Click Element                    ${menuOptionForms} 
 
 Close the app
     Close Application
